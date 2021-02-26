@@ -21,8 +21,8 @@
             "location": "[parameters('rgLocation')]",
             "properties": {},
             "parametersLink": {
-                "uri": {},
-                "contentVersion": {}
+                "uri": "https://github.com/Uqqasha/AKG-ARM/blob/master/akg.parameters.json",
+                "contentVersion": "1.0.0.0"
             }
         }
     ],

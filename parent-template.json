@@ -1,0 +1,29 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+
+    "parameters": {},
+
+    "variables": {},
+
+    "resources": [
+        {
+            "type": "Microsoft.Resources/deployments",
+            "apiVersion": "2019-10-01",
+            "name": "linkedRGTemplate",
+            "properties": {
+              "mode": "Incremental",
+              "templateLink": {
+                "uri": "https://github.com/Uqqasha/AKG-ARM/blob/master/resource-group.json",
+                "contentVersion": "1.0.0.0"
+              },
+              "parametersLink": {
+                "uri": "https://github.com/Uqqasha/AKG-ARM/blob/master/akg.parameters.json",
+                "contentVersion": "1.0.0.0"
+              }
+            }
+          }
+    ],
+
+    "outputs": {}
+}
